@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Root Access | Terminal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="terminal-container">
+        <div id="terminal">
+            <pre style="color: #00FF41; font-size: 10px; line-height: 10px;">
+  _____  ____   ____ _______ 
+ |  __ \|  _ \ / __ \__   __|
+ | |__) | |_) | |  | | | |   
+ |  _  /|  _ <| |  | | | |   
+ | | \ \| |_) | |__| | | |   
+ |_|  \_\____/ \____/  |_|   
+            </pre>
+            <div class="output">Welcome to the Vault v1.0.4...</div>
+            <div class="output">System: Proxmox Hypervisor detected.</div>
+            <div class="output">Status: <span style="color: #238636;">Online</span></div>
+            <div class="output" style="margin-bottom: 20px;">Type 'help' to see available commands.</div>
+        </div>
+
+        <div class="input-line">
+            <span class="prompt">guest@terminal:~$</span>
+            <input type="text" id="commandInput" autofocus autocomplete="off" spellcheck="false">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
