@@ -15,6 +15,8 @@ Once you land on the site, you can interface with the system using these command
 * `bio` - Who am I and what am I doing here?
 * `projects` - Open an uplink to my real GitHub repositories.
 * `neofetch` - Display (fake) system specifications with ASCII art.
+* `hack` - Attempt to bypass the main firewall (not recommended for beginners).
+* `matrix` - Glitch the system and see the truth behind the code.
 * `status` - Check simulated uptime and network diagnostics.
 * `sudo` - For those who want to push their luck (warning: incidents will be "reported").
 
@@ -24,3 +26,4 @@ Want to run or customize this terminal yourself?
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/ImpactFivem/root-access.git](https://github.com/ImpactFivem/root-access.git)
+
