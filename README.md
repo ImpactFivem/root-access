@@ -3,6 +3,8 @@
 > **System Status:** [ONLINE]
 > **Authorized Personnel Only.**
 
+![Terminal Preview](preview.png)
+
 This is a **fake terminal** portfolio website. It is designed to look like a high-end mainframe interface, but it's actually an interactive and humorous way to browse my projects and background.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-00FF41.svg?style=flat-square)](https://opensource.org/licenses/MIT)
