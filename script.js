@@ -17,7 +17,7 @@ const commands = {
     'bio': 'System Architect & HomeLab Enthusiast. Specialized in Proxmox and Cloudflare networking.',
     'projects': () => {
         printLine("Connecting to GitHub...");
-        /* Link aangepast naar jouw ImpactFivem account */
+        /* Link naar je ImpactFivem account */
         setTimeout(() => { window.open('https://github.com/ImpactFivem', '_blank'); }, 500);
         return "Opening repositories...";
     },
@@ -38,12 +38,30 @@ const commands = {
         `;
     },
     'hack': () => {
-        printLine("Initializing brute force attack...", "#00FF41");
-        printLine("Bypassing firewall...", "#00FF41", 500);
-        printLine("[██████░░░░] 60% Complete", "#00FF41", 1500);
-        printLine("[██████████] 100% Complete", "#00FF41", 2500);
-        setTimeout(() => printLine("ACCESS DENIED. FBI has been notified of your location.", "#ff5555"), 3000);
-        return "";
+        printLine(">>> INITIALIZING SYSTEM OVERRIDE v2.1.0", "#ff5555");
+        printLine("Target: NASA_MAINFRAME_BETA", "#00FF41", 400);
+        printLine("Scanning for vulnerabilities...", "#00FF41", 800);
+        
+        let progress = 0;
+        const interval = setInterval(() => {
+            progress += 10;
+            const bar = "█".repeat(progress / 10) + "░".repeat(10 - progress / 10);
+            printLine(`[${bar}] ${progress}% - Exploit injected...`, "#00FF41");
+            
+            if (progress >= 100) {
+                clearInterval(interval);
+                setTimeout(() => {
+                    printLine("----------------------------------------", "#ff5555");
+                    printLine("CRITICAL ERROR: CONNECTION TRACED!", "#ff5555");
+                    printLine("IP: 127.0.0.1 (LOCAL_BACKDOOR)", "#ff5555");
+                    printLine("LOCATION: BEHIND YOU.", "#ff5555");
+                    printLine("DEPLOYING ANTI-THEFT COUNTERMEASURES...", "#ff5555");
+                    printLine("----------------------------------------", "#ff5555");
+                }, 500);
+            }
+        }, 300);
+        
+        return "Hack in progress...";
     },
     'matrix': () => {
             printLine("Entering the Matrix...", "#00FF41");
@@ -82,17 +100,20 @@ const commands = {
 
                 const matrixInterval = setInterval(draw, 33);
                 
-                // Verwijder het effect na 5 seconden
                 setTimeout(() => {
                     clearInterval(matrixInterval);
                     canvas.remove();
                 }, 5000);
             }, 500);
-            return "Wake up, Neo...";
+        return "Wake up, Neo...";
     },
     'sudo': () => {
         printLine("Checking sudoers file...", "#ff5555");
         setTimeout(() => printLine("Incident reported to admin.", "#ff5555"), 800);
+        return "";
+    },
+    'clear': () => {
+        terminal.innerHTML = "";
         return "";
     }
 };
@@ -101,14 +122,14 @@ input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         const cmd = input.value.toLowerCase().trim();
         printLine(`<span class="prompt">root@terminal:~$</span> ${cmd}`, "#fff");
+        
         if (commands[cmd]) {
             const response = typeof commands[cmd] === 'function' ? commands[cmd]() : commands[cmd];
             if (response) printLine(response);
-        } else if (cmd === 'clear') {
-            terminal.innerHTML = "";
         } else if (cmd !== "") {
             printLine(`Command not found: ${cmd}`, "#ff5555");
         }
+        
         input.value = "";
     }
 });
