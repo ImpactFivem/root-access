@@ -3,30 +3,22 @@
 > **System Status:** [ONLINE]
 > **Authorized Personnel Only.**
 
-A custom terminal-themed portfolio built to showcase my infrastructure and projects. This isn't just a website; it's a command-line interface to my digital world.
+This is a **fake terminal** portfolio website. It is designed to look like a high-end mainframe interface, but it's actually an interactive and humorous way to browse my projects and background.
 
-[![GitHub License](https://img.shields.io/github/license/ImpactFivem/root-access?style=flat-square&color=00FF41)](https://github.com/ImpactFivem/root-access)
-[![GitHub Stars](https://img.shields.io/github/stars/ImpactFivem/root-access?style=flat-square&color=00FF41)](https://github.com/ImpactFivem/root-access)
+[![License: MIT](https://img.shields.io/badge/License-MIT-00FF41.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-## 🛠 Tech Stack
-- **Virtualization:** Proxmox VE (HomeLab core)
-- **Security:** Cloudflare Zero Trust & Tunnels
-- **Web Stack:** CloudPanel / Nginx
-- **Frontend:** Vanilla JS, CSS3 (CRT Scanline effects), HTML5
+## 🚀 Terminal Commands
+Once you land on the site, you can interface with the system using these commands:
+* `help` - Lists all available commands.
+* `bio` - Who am I and what am I doing here?
+* `projects` - Open an uplink to my real GitHub repositories.
+* `neofetch` - Display (fake) system specifications with ASCII art.
+* `status` - Check simulated uptime and network diagnostics.
+* `sudo` - For those who want to push their luck (warning: incidents will be "reported").
 
-## 🚀 Commands Included
-Type these into the live terminal to interact with the system:
-* `help` - Show all available system commands
-* `bio` - Identity, background, and mission parameters
-* `projects` - Direct uplink to my latest GitHub repositories
-* `neofetch` - Display hardware and environment specifications
-* `status` - Real-time system diagnostics and uptime
-* `sudo` - Attempt to gain administrative privileges
-
-## 🔧 Installation & Deployment
-To deploy your own instance of the vault:
+## 🔧 Installation & Usage
+Want to run or customize this terminal yourself?
 
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/ImpactFivem/root-access.git](https://github.com/ImpactFivem/root-access.git)
-   cd root-access
