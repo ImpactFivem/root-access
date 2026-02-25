@@ -1,31 +1,24 @@
-# 📟 ROOT-ACCESS v1.0.4 *Fake*
+# 📟 ROOT-ACCESS v1.0.4
 
 > **System Status:** [ONLINE]
-> **Authorized Personnel Only.** (Just kidding, come on in.)
+> **Authorized Personnel Only.**
 
-This is a terminal-themed portfolio designed to look like a high-stakes mainframe. While it might look like I'm hacking into a satellite, it's actually a showcase of my HomeLab setup and web projects.
+This is a **fake terminal** portfolio website. It is designed to look like a high-end mainframe interface, but it's actually an interactive and humorous way to browse my projects and background.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-00FF41.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-## 🛠 The "Mainframe" Tech
-- **Hypervisor:** Proxmox VE (Where the magic/chaos happens)
-- **Security:** Cloudflare Tunnels (Keeping the script kiddies out)
-- **Control Center:** CloudPanel / Nginx
-- **Engine:** Vanilla JS & CSS3 (100% pure code, 0% AI bloat)
-
 ## 🚀 Terminal Commands
-Open the live site and try these out:
-* `help` - Lists all commands (for those who don't know the way).
-* `bio` - Who is behind this terminal?
-* `neofetch` - Flexing the Proxmox specs.
-* `sudo` - Try it if you want to get "reported" to the imaginary admin.
-* `projects` - Uplink to my real GitHub work.
+Once you land on the site, you can interface with the system using these commands:
+* `help` - Lists all available commands.
+* `bio` - Who am I and what am I doing here?
+* `projects` - Open an uplink to my real GitHub repositories.
+* `neofetch` - Display (fake) system specifications with ASCII art.
+* `status` - Check simulated uptime and network diagnostics.
+* `sudo` - For those who want to push their luck (warning: incidents will be "reported").
 
-## 🔧 Installation
-To host your own troll terminal:
-```bash
-git clone [https://github.com/ImpactFivem/root-access.git](https://github.com/ImpactFivem/root-access.git)
-cd root-access
-# Open index.html and start looking like a hacker.
+## 🔧 Installation & Usage
+Want to run or customize this terminal yourself?
 
-
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/ImpactFivem/root-access.git](https://github.com/ImpactFivem/root-access.git)
