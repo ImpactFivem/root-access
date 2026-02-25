@@ -13,12 +13,12 @@ function printLine(text, color = "#adb5bd", delay = 0) {
 }
 
 const commands = {
-    'help': 'Available commands: bio, projects, neofetch, sudo, clear, status',
+    'help': 'Available commands: bio, projects, neofetch, hack, matrix, sudo, clear, status',
     'bio': 'System Architect & HomeLab Enthusiast. Specialized in Proxmox and Cloudflare networking.',
     'projects': () => {
         printLine("Connecting to GitHub...");
-        /* Change YOUR_USERNAME below to your GitHub username. */
-        setTimeout(() => { window.open('https://github.com/YOUR_USERNAME', '_blank'); }, 500);
+        /* Link aangepast naar jouw ImpactFivem account */
+        setTimeout(() => { window.open('https://github.com/ImpactFivem', '_blank'); }, 500);
         return "Opening repositories...";
     },
     'status': () => {
@@ -36,6 +36,59 @@ const commands = {
 <span style="color: #00FF41;">         \`.    |###|      </span>  <span style="color: #00FF41;">Panel:</span> CloudPanel
 <span style="color: #00FF41;">           \`--'----'      </span>  <span style="color: #00FF41;">Network:</span> Cloudflare
         `;
+    },
+    'hack': () => {
+        printLine("Initializing brute force attack...", "#00FF41");
+        printLine("Bypassing firewall...", "#00FF41", 500);
+        printLine("[██████░░░░] 60% Complete", "#00FF41", 1500);
+        printLine("[██████████] 100% Complete", "#00FF41", 2500);
+        setTimeout(() => printLine("ACCESS DENIED. FBI has been notified of your location.", "#ff5555"), 3000);
+        return "";
+    },
+    'matrix': () => {
+            printLine("Entering the Matrix...", "#00FF41");
+            setTimeout(() => {
+                const canvas = document.createElement('canvas');
+                canvas.style.position = 'fixed';
+                canvas.style.top = '0';
+                canvas.style.left = '0';
+                canvas.style.width = '100%';
+                canvas.style.height = '100%';
+                canvas.style.zIndex = '1000';
+                document.body.appendChild(canvas);
+
+                const ctx = canvas.getContext('2d');
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+
+                const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()*&^";
+                const fontSize = 16;
+                const columns = canvas.width / fontSize;
+                const drops = Array(Math.floor(columns)).fill(1);
+
+                function draw() {
+                    ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+                    ctx.fillRect(0, 0, canvas.width, canvas.height);
+                    ctx.fillStyle = "#00FF41";
+                    ctx.font = fontSize + "px monospace";
+
+                    for (let i = 0; i < drops.length; i++) {
+                        const text = letters.charAt(Math.floor(Math.random() * letters.length));
+                        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
+                        if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) drops[i] = 0;
+                        drops[i]++;
+                    }
+                }
+
+                const matrixInterval = setInterval(draw, 33);
+                
+                // Verwijder het effect na 5 seconden
+                setTimeout(() => {
+                    clearInterval(matrixInterval);
+                    canvas.remove();
+                }, 5000);
+            }, 500);
+            return "Wake up, Neo...";
     },
     'sudo': () => {
         printLine("Checking sudoers file...", "#ff5555");
