@@ -5,6 +5,9 @@
 
 A custom terminal-themed portfolio built to showcase my infrastructure and projects. This isn't just a website; it's a command-line interface to my digital world.
 
+[![GitHub License](https://img.shields.io/github/license/ImpactFivem/root-access?style=flat-square&color=00FF41)](https://github.com/ImpactFivem/root-access)
+[![GitHub Stars](https://img.shields.io/github/stars/ImpactFivem/root-access?style=flat-square&color=00FF41)](https://github.com/ImpactFivem/root-access)
+
 ## 🛠 Tech Stack
 - **Virtualization:** Proxmox VE (HomeLab core)
 - **Security:** Cloudflare Zero Trust & Tunnels
@@ -12,16 +15,18 @@ A custom terminal-themed portfolio built to showcase my infrastructure and proje
 - **Frontend:** Vanilla JS, CSS3 (CRT Scanline effects), HTML5
 
 ## 🚀 Commands Included
-Type these into the live terminal:
-* `help` - Show available commands
-* `bio` - Identity & background
-* `projects` - My latest GitHub repos
-* `stack` - Detail of the hardware/software I use
-* `flex` - System stats & uptime
+Type these into the live terminal to interact with the system:
+* `help` - Show all available system commands
+* `bio` - Identity, background, and mission parameters
+* `projects` - Direct uplink to my latest GitHub repositories
+* `neofetch` - Display hardware and environment specifications
+* `status` - Real-time system diagnostics and uptime
+* `sudo` - Attempt to gain administrative privileges
 
-## 🔧 Installation
-If you want to clone this vault:
-```bash
-git clone [https://github.com/YOUR_USERNAME/root-access.git](https://github.com/YOUR_USERNAME/root-access.git)
-cd root-access
-# Open index.html in your browser or host it on CloudPanel
+## 🔧 Installation & Deployment
+To deploy your own instance of the vault:
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/ImpactFivem/root-access.git](https://github.com/ImpactFivem/root-access.git)
+   cd root-access
