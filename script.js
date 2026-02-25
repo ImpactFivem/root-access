@@ -17,8 +17,8 @@ const commands = {
     'bio': 'System Architect & HomeLab Enthusiast. Specialized in Proxmox and Cloudflare networking.',
     'projects': () => {
         printLine("Connecting to GitHub...");
-        /* VERANDER HIERONDER JOUW_GEBRUIKERSNAAM NAAR JE ECHTE NAAM */
-        setTimeout(() => { window.open('https://github.com/JOUW_GEBRUIKERSNAAM', '_blank'); }, 500);
+        /* Change YOUR_USERNAME below to your GitHub username. */
+        setTimeout(() => { window.open('https://github.com/YOUR_USERNAME', '_blank'); }, 500);
         return "Opening repositories...";
     },
     'status': () => {
@@ -47,7 +47,7 @@ const commands = {
 input.addEventListener('keydown', (e) => {
     if (e.key === 'Enter') {
         const cmd = input.value.toLowerCase().trim();
-        printLine(`<span class="prompt">guest@terminal:~$</span> ${cmd}`, "#fff");
+        printLine(`<span class="prompt">root@terminal:~$</span> ${cmd}`, "#fff");
         if (commands[cmd]) {
             const response = typeof commands[cmd] === 'function' ? commands[cmd]() : commands[cmd];
             if (response) printLine(response);
