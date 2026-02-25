@@ -6,7 +6,6 @@
 This is a terminal-themed portfolio designed to look like a high-stakes mainframe. While it might look like I'm hacking into a satellite, it's actually a showcase of my HomeLab setup and web projects.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-00FF41.svg?style=flat-square)](https://opensource.org/licenses/MIT)
-![Website Status](https://img.shields.io/website?down_color=red&down_message=offline&up_color=00FF41&up_message=online&url=https%3A%2F%2Fimpactfivem.github.io%2Froot-access%2F)
 
 ## 🛠 The "Mainframe" Tech
 - **Hypervisor:** Proxmox VE (Where the magic/chaos happens)
@@ -28,3 +27,4 @@ To host your own troll terminal:
 git clone [https://github.com/ImpactFivem/root-access.git](https://github.com/ImpactFivem/root-access.git)
 cd root-access
 # Open index.html and start looking like a hacker.
+
